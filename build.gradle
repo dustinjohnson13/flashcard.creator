@@ -1,0 +1,19 @@
+group 'com.dustin'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.1'
+    compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.5.2'
+    compile 'org.ccil.cowan.tagsoup:tagsoup:1.2'
+
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+}
