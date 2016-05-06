@@ -5,11 +5,16 @@ package com.dustin.model
  */
 class Verb {
 
-    private String infinitive
-    private List<Tense> tenses
+    final String infinitive
+    final String participle
+    final String gerund
+    final List<Mood> moods
 
-    Verb(String infinitive, List<Tense> tenses) {
+    Verb(String infinitive, String participle, String gerund, List<Mood> moods) {
         this.infinitive = infinitive
-        this.tenses = tenses
+        this.participle = participle
+        this.gerund = gerund
+        this.moods = moods
     }
+
 }
