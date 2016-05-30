@@ -1,0 +1,83 @@
+Infinitivo: hacer
+Gerundio: {{c1::haciendo}}
+Participio: {{c1::hecho}}
+
+Indicativo presente
+yo {{c2::hago}}
+tú {{c2::haces}}
+él, ella, Ud. {{c2::hace}}
+nosotros {{c2::hacemos}}
+vosotros {{c2::hacéis}}
+ellos, ellas, Uds. {{c2::hacen}}
+vos {{c2::hacés}}
+
+Indicativo imperfecto
+yo {{c3::hacía}}
+tú {{c3::hacías}}
+él, ella, Ud. {{c3::hacía}}
+nosotros {{c3::hacíamos}}
+vosotros {{c3::hacíais}}
+ellos, ellas, Uds. {{c3::hacían}}
+vos {{c3::hacías}}
+
+Indicativo futuro
+yo {{c5::haré}}
+tú {{c5::harás}}
+él, ella, Ud. {{c5::hará}}
+nosotros {{c5::haremos}}
+vosotros {{c5::haréis}}
+ellos, ellas, Uds. {{c5::harán}}
+vos {{c5::harás}}
+
+Subjuntivo presente
+yo {{c7::haga}}
+tú {{c7::hagas}}
+él, ella, Ud. {{c7::haga}}
+nosotros {{c7::hagamos}}
+vosotros {{c7::hagáis}}
+ellos, ellas, Uds. {{c7::hagan}}
+vos {{c7::hagas, *hagás}}
+
+Subjuntivo imperfecto
+yo {{c8::hiciera o hiciese}}
+tú {{c8::hicieras o hicieses}}
+él, ella, Ud. {{c8::hiciera o hiciese}}
+nosotros {{c8::hiciéramos o hiciésemos}}
+vosotros {{c8::hicierais o hicieseis}}
+ellos, ellas, Uds. {{c8::hicieran o hiciesen}}
+vos {{c8::hicieras o hicieses}}
+
+Subjuntivo futuro
+yo {{c9::hiciere}}
+tú {{c9::hicieres}}
+él, ella, Ud. {{c9::hiciere}}
+nosotros {{c9::hiciéremos}}
+vosotros {{c9::hiciereis}}
+ellos, ellas, Uds. {{c9::hicieren}}
+vos {{c9::hicieres}}
+
+Indicativo condicional
+yo {{c6::haría}}
+tú {{c6::harías}}
+él, ella, Ud. {{c6::haría}}
+nosotros {{c6::haríamos}}
+vosotros {{c6::haríais}}
+ellos, ellas, Uds. {{c6::harían}}
+vos {{c6::harías}}
+
+Imperativo afirmativo
+yo {{c10::-}}
+tú {{c10::haz}}
+él, ella, Ud. {{c10::haga}}
+nosotros {{c10::hagamos}}
+vosotros {{c10::haced}}
+ellos, ellas, Uds. {{c10::hagan}}
+vos {{c10::hacé}}
+
+Imperativo negativo
+yo no {{c11::hagas}}
+tú no {{c11::haga}}
+él, ella, Ud. no {{c11::hagamos}}
+nosotros no {{c11::hagáis}}
+vosotros no {{c11::hagan}}
+ellos, ellas, Uds. no {{c11::hagas, *hagás}}

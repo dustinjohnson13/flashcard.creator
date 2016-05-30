@@ -5,204 +5,264 @@ package com.dustin.service
 class AnkiCSVCreator {
 
     public static void main(String[] args) {
-    def input = """
+        def input = """
 
 Infinitivo:
 Gerundio:
-Participio:\thacer
-haciendo
-hecho\tDefinición\tEn Inglés
+Participio:\tver
+viendo
+visto\tDefinición\tEn Inglés
 En Francés
 En Portugués\t \t
 Indicativo
 presente
-yo\thago
-tú\thaces
-él, ella, Ud.\thace
-nosotros\thacemos
-vosotros\thacéis
-ellos, ellas, Uds.\thacen
-vos\thacés
+yo\tveo
+tú\tves
+él, ella, Ud.\tve
+nosotros\tvemos
+vosotros\tveis
+ellos, ellas, Uds.\tven
+vos\tves
 imperfecto
-hacía
-hacías
-hacía
-hacíamos
-hacíais
-hacían
-hacías
+veía
+veías
+veía
+veíamos
+veíais
+veían
+veías
 pretérito
-hice
-hiciste
-hizo
-hicimos
-hicisteis
-hicieron
-hiciste
+vi
+viste
+vio
+vimos
+visteis
+vieron
+viste
 futuro
-haré
-harás
-hará
-haremos
-haréis
-harán
-harás
+veré
+verás
+verá
+veremos
+veréis
+verán
+verás
 condicional
-haría
-harías
-haría
-haríamos
-haríais
-harían
-harías
+vería
+verías
+vería
+veríamos
+veríais
+verían
+verías
 Tiempos compuestos comunes
 pretérito perfecto
-yo\the hecho
-tú\thas hecho
-él, ella, Ud.\tha hecho
-nosotros\themos hecho
-vosotros\thabéis hecho
-ellos, ellas, Uds.\than hecho
-vos\thas hecho
+yo\the visto
+tú\thas visto
+él, ella, Ud.\tha visto
+nosotros\themos visto
+vosotros\thabéis visto
+ellos, ellas, Uds.\than visto
+vos\thas visto
 pluscuamperfecto
-había hecho
-habías hecho
-había hecho
-habíamos hecho
-habíais hecho
-habían hecho
-habías hecho
+había visto
+habías visto
+había visto
+habíamos visto
+habíais visto
+habían visto
+habías visto
 futuro perfecto
-habré hecho
-habrás hecho
-habrá hecho
-habremos hecho
-habréis hecho
-habrán hecho
-habrás hecho
+habré visto
+habrás visto
+habrá visto
+habremos visto
+habréis visto
+habrán visto
+habrás visto
 condicional perfecto
-habría hecho
-habrías hecho
-habría hecho
-habríamos hecho
-habríais hecho
-habrían hecho
-habrías hecho
+habría visto
+habrías visto
+habría visto
+habríamos visto
+habríais visto
+habrían visto
+habrías visto
 Subjuntivo
 presente
-yo\thaga
-tú\thagas
-él, ella, Ud.\thaga
-nosotros\thagamos
-vosotros\thagáis
-ellos, ellas, Uds.\thagan
-vos\thagas, *hagás
+yo\tvea
+tú\tveas
+él, ella, Ud.\tvea
+nosotros\tveamos
+vosotros\tveáis
+ellos, ellas, Uds.\tvean
+vos\tveas
 imperfecto
-hiciera o hiciese
-hicieras o hicieses
-hiciera o hiciese
-hiciéramos o hiciésemos
-hicierais o hicieseis
-hicieran o hiciesen
-hicieras o hicieses
+viera o viese
+vieras o vieses
+viera o viese
+viéramos o viésemos
+vierais o vieseis
+vieran o viesen
+vieras o vieses
 futuro
-hiciere
-hicieres
-hiciere
-hiciéremos
-hiciereis
-hicieren
-hicieres
+viere
+vieres
+viere
+viéremos
+viereis
+vieren
+vieres
 Tiempos compuestos del subjuntivo
 pretérito perfecto
-yo\thaya hecho
-tú\thayas hecho
-él, ella, Ud.\thaya hecho
-nosotros\thayamos hecho
-vosotros\thayáis hecho
-ellos, ellas, Uds.\thayan hecho
-vos\thayas hecho
+yo\thaya visto
+tú\thayas visto
+él, ella, Ud.\thaya visto
+nosotros\thayamos visto
+vosotros\thayáis visto
+ellos, ellas, Uds.\thayan visto
+vos\thayas visto
 pluscuamperfecto
-hubiera o hubiese hecho
-hubieras o hubieses hecho
-hubiera o hubiese hecho
-hubiéramos o hubiésemos hecho
-hubierais o hubieseis hecho
-hubieran o hubiesen hecho
-hubieras o hubieses hecho
+hubiera o hubiese visto
+hubieras o hubieses visto
+hubiera o hubiese visto
+hubiéramos o hubiésemos visto
+hubierais o hubieseis visto
+hubieran o hubiesen visto
+hubieras o hubieses visto
 futuro perfecto
-hubiere hecho
-hubieres hecho
-hubiere hecho
-hubiéremos hecho
-hubiereis hecho
-hubieren hecho
-hubieres hecho
+hubiere visto
+hubieres visto
+hubiere visto
+hubiéremos visto
+hubiereis visto
+hubieren visto
+hubieres visto
 Imperativo
 afirmativo
 (yo)\t-
-(tú)\thaz
-(usted)\thaga
-(nosotros)\thagamos
-(vosotros)\thaced
-(ustedes)\thagan
-(vos)\thacé
+(tú)\tve
+(usted)\tvea
+(nosotros)\tveamos
+(vosotros)\tved
+(ustedes)\tvean
+(vos)\tve
 negativo
 -
-no hagas
-no haga
-no hagamos
-no hagáis
-no hagan
-no hagas, *hagás
+no veas
+no vea
+no veamos
+no veáis
+no vean
+no veas
 Indicativo
 pretérito anterior
-(yo)\thube hecho
-(tú)\thubiste hecho
-(usted)\thubo hecho
-(nosotros)\thubimos hecho
-(vosotros)\thubisteis hecho
-(ustedes)\thubieron hecho
-(vos)\thubiste hecho
-
+(yo)\thube visto
+(tú)\thubiste visto
+(usted)\thubo visto
+(nosotros)\thubimos visto
+(vosotros)\thubisteis visto
+(ustedes)\thubieron visto
+(vos)\thubiste visto
         """
 
-        def moods = ['Indicative', 'Subjunctive', 'Imperative', 'Conditional']
+        def moods = ['Indicativo', 'Subjuntivo', 'Imperativo', 'Conditional']
+        def complexTenses = ['Tiempos compuestos comunes', 'Tiempos compuestos del subjuntivo', 'pretérito perfecto', 'pluscuamperfecto', 'pretérito anterior']
+        def pronouns = ['yo', 'tú', 'él, ella, Ud.', 'nosotros', 'vosotros', 'ellos, ellas, Uds.', 'vos']
+
         String trimmed = input.trim()
         def lines = trimmed.readLines()
         def filteredLines = []
 
         def mood = null
+        int pronounNum = 0
         int clozeNum = 1
+        boolean setMood = false
+        boolean complexTense = false
 
-        filteredLines += lines[0]
-
-        for (int i = 1; i < lines.size(); i++) {
+        for (int i = 2; i < lines.size(); i++) {
             def line = lines.get(i)
             line = line.trim()
 
-            if (moods.contains(line)) {
-                mood = line
-            } else if (line.contains('Pluperfect')) { // Skip tense
-                i = i+12;
-            } else if (line.contains('Perfect') || line.contains('perfect')) { // Skip tense
-                i = i+6;
-            } else if (line.contains(' ')) { // conjugation
-                def lineWithCloze = line.replaceAll(/(\s+)(\w+.*)/, '$1{{c' + clozeNum + '::$2}}')
+
+            if (i == 2) {
+                def split = line.split('\t')
+                def lineWithCloze = "Infinitivo: " + split[1]
 
                 filteredLines += lineWithCloze
-            } else if (!line.isEmpty()) { // Tense name
+            } else if (i == 3) {
+                def lineWithCloze = "Gerundio: " + clozeDeleteLine(line, clozeNum)
+
+                filteredLines += lineWithCloze
+            } else if (i == 4) {
+                def split = line.split('\t')
+                def lineWithCloze = 'Participio: ' + clozeDeleteLine(split[0], clozeNum)
+
+                filteredLines += lineWithCloze
+            } else if (i < 7 || line == '-') {
+            } else if (complexTenses.contains(line)) {
+                complexTense = true
+            } else if (moods.contains(line)) {
+                mood = line
+                setMood = true
+                complexTense = false
+            } else if (line.contains('\t')) { // First conjugation for row
+
+                if (complexTense) {
+                    continue
+                }
+
+                def split = line.split('\t')
+                def pronoun = pronouns[pronounNum++]
+                def lineWithCloze = pronoun + ' ' + clozeDeleteLine(split[split.length - 1], clozeNum)
+
+                filteredLines += lineWithCloze
+
+//                if (pronounNum == pronouns.size() - 1) {
+//                    pronounNum = 0
+//                    clozeNum++
+//                }
+            } else if (setMood || (pronounNum == pronouns.size())) { // Tense name
+                if (complexTense) {
+                    continue
+                }
                 filteredLines += ''
                 filteredLines += (mood + " " + line)
-                clozeNum++;
+                clozeNum++
+
+                pronounNum = 0
+                setMood = false
+            } else { // remaining conjugations for row
+
+                if (complexTense) {
+                    pronounNum++
+                    continue
+                }
+
+                def pronoun = pronouns[pronounNum++]
+                def lineWithCloze
+                if (line.startsWith('no ')) {
+                    lineWithCloze = pronoun + ' no ' + clozeDeleteLine(line.substring(3), clozeNum)
+                } else {
+                    lineWithCloze = pronoun + ' ' + clozeDeleteLine(line, clozeNum)
+                }
+
+                filteredLines += lineWithCloze
+//
+//                if (pronounNum == pronouns.size() - 1) {
+//                    pronounNum = 0
+//                    clozeNum++
+//                }
             }
         }
 
         for (int i = 0; i < filteredLines.size(); i++) {
             println "${filteredLines.get(i)}"
         }
+    }
 
-
+    private static String clozeDeleteLine(String line, int clozeNum) {
+        return '{{c' + clozeNum + '::' + line + '}}'
     }
 
 }
